@@ -1,0 +1,126 @@
+
+body {
+  
+  margin: 0;
+}
+
+#brandName {
+  font-family: 'Dosis', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+  }
+
+#slogan {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#plantPhotos {
+  display: flex;
+  margin-right: 15vw;
+}
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  margin: 15vh 20vh;
+}
+
+.hexagon:hover {
+  opacity: 0.8;
+}
+
+#hex-1 {
+  background-image: url(https://c.pxhere.com/photos/e8/60/plant_pot_succulent_green_botany_growth_potted_nature-762399.jpg!d);
+  background-size: auto 346.4102px;
+  background-position: center;
+}
+
+#hex-2 {
+  background-image: url(https://c.pxhere.com/photos/a2/86/succulent_spiky_table_plate_plant-109598.jpg!d);
+  background-size: auto 346.4102px;
+  background-position: center;
+}
+
+#hex-3 {
+  background-image: url(https://c.pxhere.com/photos/7e/fa/a_fleshy_plant_fleshy_in_this_cactus_garden_flowers_plants_a_flower_garden_potted_plant-603545.jpg!d);
+  background-size: auto 346.4102px;
+  background-position: center;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 43.93px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 300.0000px;
+  height: 173.20508075688775px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -106.0660px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -106.0660px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 300.0000px;
+  height: 173.2051px;
+  z-index: 2;
+  background: inherit;
+}
+
+@media (max-width: 768px) {
+  #plantPhotos {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+div .hexagon {
+  width: 80%;
+  margin-bottom: 50vh;
+  max-width: 300px;
+  /* border: 4px solid black; */
+}
+
+}
