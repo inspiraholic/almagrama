@@ -1,7 +1,5 @@
-
 body {
-  
-  margin: 0;
+   margin: 0;
 }
 
 #brandName {
@@ -17,20 +15,45 @@ body {
   margin-bottom: 15px;
 }
 
+.page-categories {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.65rem;
+  opacity: 0;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 15%;
+  z-index: 5;
+}
+
+.page-categories:hover {
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes opacity {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 #plantPhotos {
   display: flex;
-  margin-right: 15vw;
+  margin-left: 8vh;
+  margin-top: 12vh;
 }
 
 .hexagon {
   position: relative;
   width: 300px; 
   height: 173.21px;
-  margin: 15vh 20vh;
+  margin: 7vh 7vh;
+  opacity: 0.95;
 }
 
 .hexagon:hover {
-  opacity: 0.8;
+  opacity: 1;
+  cursor: pointer;
 }
 
 #hex-1 {
@@ -106,21 +129,4 @@ body {
   height: 173.2051px;
   z-index: 2;
   background: inherit;
-}
-
-@media (max-width: 768px) {
-  #plantPhotos {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-div .hexagon {
-  width: 80%;
-  margin-bottom: 50vh;
-  max-width: 300px;
-  /* border: 4px solid black; */
-}
-
 }
